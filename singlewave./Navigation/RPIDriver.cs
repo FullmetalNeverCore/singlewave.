@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using singlewave_.Navigation.Abstraction;
@@ -41,6 +41,7 @@ namespace singlewave_.Navigation
             ChromeOptions opts = new ChromeOptions();
             opts.BinaryLocation = _binaryl;
             //creating driver
+            Console.WriteLine(_chromepath);
             try
             {
                 IWebDriver wd = new ChromeDriver(_chromepath, opts);
