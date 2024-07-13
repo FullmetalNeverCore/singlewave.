@@ -8,7 +8,7 @@ namespace singlewave_.Navigation
     public class RPIDriver : iDriverMaster
     {
         private readonly string _binaryl = "/usr/bin/chromium-browser";
-        private readonly string _chromepath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Drivers/macos/chromedriver");
+        private readonly string _chromepath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Drivers/rpi/chromedriver");
 
         public void Dispose(IWebDriver wd)
         {
