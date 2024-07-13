@@ -40,6 +40,11 @@ namespace singlewave_.Navigation
         {
             ChromeOptions opts = new ChromeOptions();
             opts.BinaryLocation = _binaryl;
+            opts.AddArgument("--disable-gpu");
+            opts.AddArguments("--headless");
+            opts.AddArguments("--no-sandbox");
+            opts.AddArguments("--disable-dev-shm-usage");
+            opts.AddArguments("--disable-extensions");
             //creating driver
             Console.WriteLine(_chromepath);
             try
